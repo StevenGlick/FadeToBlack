@@ -17,10 +17,20 @@ FadeToBlack gives you a warning you can actually see: for the last minute or two
 
 ## Requirements
 
-- Windows 10 or 11
-- [.NET 9 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/9.0) (x64)
+- Windows 10 or 11 (x64)
 
 ## Getting started
+
+### Download
+
+Grab the latest exe from the [Releases page](https://github.com/StevenGlick/FadeToBlack/releases/latest):
+
+- **`FadeToSleep-vX.Y.Z-win-x64.exe`**: recommended. Runs on any 64-bit Windows 10/11 PC with nothing else to install (about 48 MB).
+- **`FadeToSleep-vX.Y.Z-win-x64-requires-dotnet9.exe`**: tiny (under 200 KB), but needs the [.NET 9 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/9.0) installed.
+
+There's no installer. Put the exe somewhere permanent (for example `C:\Program Files\FadeToBlack` or a folder in your user directory), run it, then right-click the tray icon and turn on **Start with Windows**.
+
+> **Note:** Because the exe isn't code-signed, Windows SmartScreen may show "Windows protected your PC" the first time you run it. Click **More info → Run anyway**.
 
 ### Build from source
 
@@ -35,8 +45,6 @@ dotnet publish -c Release -r win-x64 --self-contained false -p:PublishSingleFile
 Then run `bin/app/FadeToSleep.exe`. A small gold-to-black circle appears in the system tray.
 
 To build a version that doesn't need .NET installed (much larger file), use `--self-contained true` instead.
-
-> **Note:** Because the exe isn't code-signed, Windows SmartScreen may show "Windows protected your PC" the first time you run a downloaded copy. Click **More info → Run anyway**.
 
 ## Using it
 

@@ -9,6 +9,9 @@
     <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
     <AssemblyName>FadeToSleep</AssemblyName>
     <RootNamespace>FadeToSleep</RootNamespace>
+    <Version>1.0.0</Version>
+    <Product>FadeToBlack</Product>
+    <Description>Fades the screen to black before Windows sleeps the monitor.</Description>
   </PropertyGroup>
 
 </Project>
